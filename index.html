@@ -605,7 +605,7 @@ const PD=[
 
 /* ── WAVE NAME ── */
 const hn=document.getElementById('hname');
-[...'EZHIL     KIRTHIK M.'].forEach(c=>{
+['EZHIL KIRTHIK M.'].forEach(c=>{
   if(c===' '){hn.innerHTML+='<span style="display:inline-block;width:.35em">&nbsp;</span>';return;}
   const s=document.createElement('span');s.className='wc';s.textContent=c;hn.appendChild(s);
 });
