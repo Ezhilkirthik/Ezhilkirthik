@@ -63,7 +63,31 @@ nav.scrolled{background:rgba(3,5,8,.85);backdrop-filter:blur(20px);border-bottom
 @keyframes ofloat{100%{transform:translateY(-40px) scale(1.08)}}
 .hinner{position:relative;z-index:1;max-width:1300px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 420px;gap:4rem;align-items:center}
 
-.heyebrow{display:inline-flex;align-items:center;gap:.6rem;padding:.4rem 1rem;border:1px solid rgba(0,245,255,.25);border-radius:100px;margin-bottom:2rem;font-family:var(--font-m);font-size:.68rem;letter-spacing:.18em;color:var(--c-emerald);background:rgba(0,255,163,.05);opacity:0;animation:fup .8s .2s var(--expo) forwards}
+.heyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  padding:.5rem 1.2rem;
+
+  border:1px solid rgba(0,255,200,0.25);
+  border-radius:100px;
+
+  margin-bottom:2rem;
+
+  font-family:var(--font-m);
+  font-size:.72rem;
+  letter-spacing:.14em;
+
+  color:#00ffc8;                               /* cleaner neon */
+  background:rgba(0,255,200,0.06);             /* softer bg */
+
+  backdrop-filter: blur(8px);                  /* glass effect */
+  box-shadow:0 0 12px rgba(0,255,200,0.15);    /* subtle glow */
+
+  opacity:0;
+  animation:fup .8s .2s var(--expo) forwards;
+}
+  
 .edot{
   width:10px;
   height:10px;
