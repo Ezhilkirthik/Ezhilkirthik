@@ -201,7 +201,7 @@ nav.scrolled{background:rgba(3,5,8,.85);backdrop-filter:blur(20px);border-bottom
 .agrid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
 .asticky{position:sticky;top:7rem}
 .asub{font-family:var(--font-s);font-style:italic;font-size:1.5rem;color:var(--c-muted);margin-top:1rem;margin-bottom:3rem}
-.srow{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.srow{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:1.5rem;margin-top:3rem}
 .scard{padding:1.5rem 1rem;border:1px solid var(--c-border);border-radius:1rem;text-align:center;background:var(--c-surface);transition:border-color .3s,transform .3s var(--bounce);cursor:pointer;position:relative;overflow:hidden}
 .scard::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(0,245,255,.1),transparent 70%);opacity:0;transition:opacity .3s}
 .scard:hover{border-color:rgba(0,245,255,.4);transform:translateY(-6px) scale(1.04)}.scard:hover::after{opacity:1}
@@ -620,7 +620,7 @@ const PD=[
 
 /* ── WAVE NAME ── */
 const hn=document.getElementById('hname');
-['EZHIL KIRTHIK M.'].forEach(c=>{
+[...'EZHIL     KIRTHIK M.'].forEach(c=>{
   if(c===' '){hn.innerHTML+='<span style="display:inline-block;width:.35em">&nbsp;</span>';return;}
   const s=document.createElement('span');s.className='wc';s.textContent=c;hn.appendChild(s);
 });
